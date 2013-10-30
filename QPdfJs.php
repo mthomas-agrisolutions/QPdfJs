@@ -52,7 +52,7 @@ class QPdfJs extends CWidget
   public function run()
   {
     // Publish extension assets
-    $basePath=Yii::getPathOfAlias('ext.pdfJs.assets');
+    $basePath=dirname(__FILE__).'/assets';
     $baseUrl=Yii::app()->getAssetManager()->publish($basePath);
 
     $this->render('_viewer',array(
